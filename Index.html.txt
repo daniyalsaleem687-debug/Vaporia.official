@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Vape Store</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-black text-white">
+
+<!-- HEADER -->
+<header class="text-center py-6 border-b border-gray-800">
+  <h1 class="text-3xl font-bold">🔥 My Vape Store</h1>
+  <p class="text-gray-400">Premium Vape Products</p>
+</header>
+
+<!-- PRODUCTS SECTION -->
+<section class="p-6">
+  <h2 class="text-xl mb-4">Products</h2>
+
+  <!-- EMPTY GRID (TU BAAD ME PRODUCTS ADD KAREGA) -->
+  <div id="products" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    
+    <!-- EMPTY MESSAGE -->
+    <p class="text-gray-500 col-span-full text-center">
+      No products yet. Coming soon...
+    </p>
+
+  </div>
+</section>
+
+<!-- WHATSAPP BUTTON -->
+<div class="fixed bottom-5 right-5">
+<button onclick="orderNow()" class="bg-green-500 px-6 py-3 rounded-full">
+🛒 Order on WhatsApp
+</button>
+</div>
+
+<script>
+
+// 🛒 CART (future use)
+let cart = [];
+
+// 📲 WHATSAPP ORDER (future)
+function orderNow() {
+
+  if(cart.length === 0){
+    alert("No products selected yet!");
+    return;
+  }
+
+  let message = "Order Details:\n";
+
+  cart.forEach(item => {
+    message += `${item.name} - Rs ${item.price}\n`;
+  });
+
+  let phone = "923XXXXXXXXX"; // 👈 apna number daal
+  let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+  window.open(url, "_blank");
+}
+
+</script>
+
+</body>
+</html>
