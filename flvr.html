@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAPORIA OFFICIAL | The Essence of Luxury</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #0a0a0a; color: #d4af37; }
+        .serif { font-family: 'Cinzel', serif; }
+        .gold-gradient { background: linear-gradient(145deg, #d4af37, #f9e29c, #b8860b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .gold-border { border: 1px solid #d4af37; }
+        .gold-bg { background-color: #d4af37; color: black; }
+        .gold-bg:hover { background-color: #f9e29c; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); transition: 0.4s ease; border-color: #f9e29c; }
+    </style>
+</head>
+<body>
+
+    <nav class="flex items-center justify-between px-10 py-6 border-b border-gray-800 sticky top-0 bg-black z-50">
+        <div class="text-2xl font-bold serif tracking-widest gold-gradient">VAPORIA</div>
+        <div class="hidden md:flex space-x-8 uppercase text-xs tracking-widest text-gray-400">
+            <a href="#" class="hover:text-yellow-500">Collections</a>
+            <a href="#" class="hover:text-yellow-500">Bespoke</a>
+            <a href="#" class="hover:text-yellow-500">Our Story</a>
+        </div>
+        <div class="flex items-center space-x-6">
+            <button class="text-sm gold-gradient">Cart (0)</button>
+            <button class="gold-border px-4 py-2 text-xs uppercase tracking-tighter">Login</button>
+        </div>
+    </nav>
+
+    <section class="h-screen flex flex-col items-center justify-center text-center px-4" style="background: radial-gradient(circle, #1a1a1a 0%, #000000 100%);">
+        <h2 class="text-xs uppercase tracking-[0.5em] mb-4 text-gray-500">Exclusivity Redefined</h2>
+        <h1 class="text-5xl md:text-8xl serif mb-8 gold-gradient">VAPORIA OFFICIAL</h1>
+        <p class="max-w-xl text-gray-400 font-light leading-relaxed mb-10">
+            Discover the art of elegance. Our curated collection is designed for those who settle for nothing but the absolute finest.
+        </p>
+        <button class="gold-bg px-10 py-4 font-bold uppercase text-xs tracking-widest">Shop Collection</button>
+    </section>
+
+    <section class="py-24 px-10">
+        <h3 class="serif text-3xl mb-16 text-center tracking-widest">The Signature Line</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            
+            <div class="card p-4 gold-border border-opacity-20 flex flex-col items-center bg-black">
+                <div class="w-full h-80 bg-zinc-900 mb-6 flex items-center justify-center">
+                    <span class="text-zinc-700 italic text-sm">Product Image</span>
+                </div>
+                <h4 class="serif text-xl mb-2">Aurelian Essence</h4>
+                <p class="text-gray-500 text-sm mb-4">Limited Edition Release</p>
+                <p class="text-lg mb-6">$450.00</p>
+                <button class="w-full border border-yellow-700 py-3 text-xs uppercase tracking-widest hover:bg-yellow-700 hover:text-black transition">Add to Cart</button>
+            </div>
+
+            <div class="card p-4 gold-border border-opacity-20 flex flex-col items-center bg-black">
+                <div class="w-full h-80 bg-zinc-900 mb-6 flex items-center justify-center">
+                    <span class="text-zinc-700 italic text-sm">Product Image</span>
+                </div>
+                <h4 class="serif text-xl mb-2">Midnight Onyx</h4>
+                <p class="text-gray-500 text-sm mb-4">Handcrafted Excellence</p>
+                <p class="text-lg mb-6">$620.00</p>
+                <button class="w-full border border-yellow-700 py-3 text-xs uppercase tracking-widest hover:bg-yellow-700 hover:text-black transition">Add to Cart</button>
+            </div>
+
+            <div class="card p-4 gold-border border-opacity-20 flex flex-col items-center bg-black">
+                <div class="w-full h-80 bg-zinc-900 mb-6 flex items-center justify-center">
+                    <span class="text-zinc-700 italic text-sm">Product Image</span>
+                </div>
+                <h4 class="serif text-xl mb-2">Celestial Vapor</h4>
+                <p class="text-gray-500 text-sm mb-4">Premium Selection</p>
+                <p class="text-lg mb-6">$380.00</p>
+                <button class="w-full border border-yellow-700 py-3 text-xs uppercase tracking-widest hover:bg-yellow-700 hover:text-black transition">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="py-20 border-t border-gray-900 text-center">
+        <div class="serif text-xl gold-gradient mb-6">VAPORIA</div>
+        <p class="text-xs text-gray-600 uppercase tracking-widest">© 2026 Vaporia Official. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
